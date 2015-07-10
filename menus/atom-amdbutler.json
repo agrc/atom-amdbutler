@@ -1,0 +1,12 @@
+{
+    "menu": [{
+        "label": "Packages",
+        "submenu": [{
+            "label": "AMD Butler",
+            "submenu": [{
+                "label": "Toggle",
+                "command": "atom-amdbutler:toggle"
+            }]
+        }]
+    }]
+}
