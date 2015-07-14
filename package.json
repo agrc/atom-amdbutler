@@ -9,7 +9,7 @@
         "javascript"
     ],
     "activationCommands": {
-        "atom-workspace": "atom-amdbutler:toggle"
+        "atom-workspace": "atom-amdbutler:add"
     },
     "repository": "https://github.com/agrc/atom-amdbutler",
     "license": "MIT",

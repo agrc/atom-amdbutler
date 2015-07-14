@@ -1,4 +1,4 @@
-var AtomAmdButer = require('../lib/atom-amdbutler');
+// var AtomAmdButer = require('../lib/atom-amdbutler');
 
 describe('AtomAmdButler', function () {
     var workspaceElement;

@@ -16,7 +16,8 @@
         "spyOn",
         "waitsFor",
         "xdescribe",
-        "xit"
+        "xit",
+        "atom"
     ],
 
     "bitwise": true,

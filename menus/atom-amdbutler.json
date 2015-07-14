@@ -4,8 +4,8 @@
         "submenu": [{
             "label": "AMD Butler",
             "submenu": [{
-                "label": "Toggle",
-                "command": "atom-amdbutler:toggle"
+                "label": "Add Import",
+                "command": "atom-amdbutler:add"
             }]
         }]
     }]
