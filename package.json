@@ -1,5 +1,5 @@
 {
-    "name": "atom-amdbutler",
+    "name": "amdbutler",
     "main": "./lib/atom-amdbutler",
     "version": "0.0.0",
     "description": "Easily manage your AMD dependencies",
@@ -9,7 +9,7 @@
         "javascript"
     ],
     "activationCommands": {
-        "atom-workspace": "atom-amdbutler:add"
+        "atom-workspace": "amdbutler:add"
     },
     "repository": "https://github.com/agrc/atom-amdbutler",
     "license": "MIT",
