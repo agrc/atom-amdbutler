@@ -1,21 +1,23 @@
 {
-    "name": "amdbutler",
-    "main": "./lib/atom-amdbutler",
-    "version": "0.0.0",
-    "description": "Easily manage your AMD dependencies",
-    "keywords": [
-        "amd",
-        "butler",
-        "javascript"
-    ],
-    "activationCommands": {
-        "atom-workspace": "amdbutler:add"
-    },
-    "repository": "https://github.com/agrc/atom-amdbutler",
-    "license": "MIT",
-    "engines": {
-        "atom": ">=1.0.0 <2.0.0"
-    },
-    "dependencies": {
-    }
+  "name": "amdbutler",
+  "main": "./lib/atom-amdbutler",
+  "version": "0.0.0",
+  "description": "Easily manage your AMD dependencies",
+  "keywords": [
+    "amd",
+    "butler",
+    "javascript"
+  ],
+  "activationCommands": {
+    "atom-workspace": "amdbutler:add"
+  },
+  "repository": "https://github.com/agrc/atom-amdbutler",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "change-case": "^2.3.0",
+    "glob": "^5.0.14"
+  }
 }

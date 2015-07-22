@@ -1,4 +1,5 @@
 {
-  "atom-workspace": {
-  }
+    "atom-workspace .editor": {
+        "alt-a": "amdbutler:add"
+    }
 }

@@ -17,7 +17,8 @@
         "waitsFor",
         "xdescribe",
         "xit",
-        "atom"
+        "atom",
+        "__dirname"
     ],
 
     "bitwise": true,
