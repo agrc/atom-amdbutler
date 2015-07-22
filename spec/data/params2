@@ -1,0 +1,19 @@
+
+    declare,
+    _WidgetBase,
+    _TemplatedMixin,
+    _WidgetsInTemplateMixin,
+    template,
+    Standby,
+    HelpPopup,
+    has,
+    domStyle,
+    topic,
+    lang,
+    array,
+    domConstruct,
+    win,
+    ProviderResult,
+    registry,
+    query
+    

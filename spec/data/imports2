@@ -1,0 +1,21 @@
+
+    'dojo/_base/declare',
+    'dijit/_WidgetBase',
+    'dijit/_TemplatedMixin',
+    'dijit/_WidgetsInTemplateMixin',
+    'dojo/text!app/templates/ListProviders.html',
+    'dojox/widget/Standby',
+    'app/HelpPopup',
+    'dojo/has',
+    'dojo/dom-style',
+    'dojo/topic',
+    'dojo/_base/lang',
+    'dojo/_base/array',
+    'dojo/dom-construct',
+    'dojo/_base/window',
+    'app/ProviderResult',
+    'dijit/registry',
+    'dojo/query',
+
+    'agrc/widgets/locate/FindAddress',
+    'dojo/_base/sniff'
