@@ -1,5 +1,6 @@
 {
     "atom-workspace .editor": {
-        "alt-a": "amdbutler:add"
+        "alt-a": "amdbutler:add",
+        "alt-s": "amdbutler:sort"
     }
 }
