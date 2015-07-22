@@ -22,21 +22,21 @@ describe('crawler tests', function () {
             var result = crawler.crawl(folder, []);
 
             expect(result).toEqual([
-                ['test/Module', 'Module'],
-                ['test/nlsdontskip/test', 'test'],
-                ['test/sub/ModuleTest', 'ModuleTest'],
-                ['test/sub/string', 'testString'],
-                ['test2/Module', 'Module'],
-                ['test2/dom-style', 'domStyle'],
-                ['test2/sub/Module', 'Module']
+                {path: 'test/Module', name: 'Module'},
+                {path: 'test/nlsdontskip/test', name: 'test'},
+                {path: 'test/sub/ModuleTest', name: 'ModuleTest'},
+                {path: 'test/sub/string', name: 'testString'},
+                {path: 'test2/Module', name: 'Module'},
+                {path: 'test2/dom-style', name: 'domStyle'},
+                {path: 'test2/sub/Module', name: 'Module'}
             ]);
         });
-        it('crawl with excludes', function () {
-            var exclude = ['test/sub/ModuleTest', 'ModuleTest'];
+        it('handles excludes', function () {
+            var exclude = {path: 'test/sub/ModuleTest', name: 'ModuleTest'};
             var result = crawler.crawl(folder, [exclude]);
 
             expect(result.every(function (item) {
-                return item[0] !== exclude[0] && item[1] !== exclude[1];
+                return item.name !== exclude.name && item.path !== exclude.path;
             })).toBe(true);
         });
         it('gets param name', function () {

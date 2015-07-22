@@ -18,7 +18,8 @@
         "xdescribe",
         "xit",
         "atom",
-        "__dirname"
+        "__dirname",
+        "put"
     ],
 
     "bitwise": true,
@@ -35,7 +36,6 @@
     "gcl": true,
     "immed": true,
     "indent": 4,
-    "jquery": true,
     "latedef": true,
     "maxcomplexity": 10,
     "maxerr": 250,

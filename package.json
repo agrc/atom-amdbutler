@@ -17,7 +17,10 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "atom-space-pen-views": "^2.0.5",
     "change-case": "^2.3.0",
-    "glob": "^5.0.14"
+    "event-kit": "^1.2.0",
+    "glob": "^5.0.14",
+    "put-selector": "^0.3.6"
   }
 }
