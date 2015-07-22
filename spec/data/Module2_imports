@@ -1,0 +1,8 @@
+
+    'app/Router',
+
+    'dojo/topic',
+    'dojo/router',
+    'dojo/_base/lang',
+
+    'esri/geometry/Extent'
