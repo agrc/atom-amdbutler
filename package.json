@@ -10,8 +10,8 @@
   ],
   "activationCommands": {
     "atom-workspace": [
-        "amdbutler:add",
-        "amdbutler:sort"
+      "amdbutler:add",
+      "amdbutler:sort"
     ]
   },
   "repository": "https://github.com/agrc/atom-amdbutler",
