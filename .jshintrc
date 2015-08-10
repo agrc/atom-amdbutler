@@ -17,7 +17,10 @@
         "waitsFor",
         "xdescribe",
         "xit",
-        "atom"
+        "atom",
+        "__dirname",
+        "__filename",
+        "put"
     ],
 
     "bitwise": true,
@@ -34,7 +37,6 @@
     "gcl": true,
     "immed": true,
     "indent": 4,
-    "jquery": true,
     "latedef": true,
     "maxcomplexity": 10,
     "maxerr": 250,
