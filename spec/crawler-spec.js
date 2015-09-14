@@ -33,14 +33,6 @@ describe('crawler tests', function () {
 
             expect(result.length).toBe(7);
         });
-        it('handles excludes', function () {
-            var exclude = {path: 'test/sub/ModuleTest', name: 'ModuleTest'};
-            var result = crawler.crawl(folder, [exclude]);
-
-            expect(result.every(function (item) {
-                return item.name !== exclude.name && item.path !== exclude.path;
-            })).toBe(true);
-        });
         it('gets param name', function () {
             expect(crawler.getParamName('test/dom-style')).toEqual('domStyle');
             expect(crawler.getParamName('test/window')).toEqual('testWindow');
