@@ -68,7 +68,8 @@ describe('zipper tests', function () {
     describe('generateImportsText', function () {
         it('generates the appropriate imports text', function () {
             var result = zipper.generateImportsTxt(pairs, '    ');
-            var expected = fs.readFileSync(path.join(__dirname, 'data', 'imports_txt'), readOptions);
+            var expected = fs.readFileSync(path.join(__dirname, 'data', 'imports_txt'), readOptions)
+                .replace(/\r/gm, '');
 
             expect(result).toEqual(expected);
         });
@@ -76,13 +77,15 @@ describe('zipper tests', function () {
     describe('generateParamsTxt', function () {
         it('generates the appropriate params text', function () {
             var result = zipper.generateParamsTxt(pairs, '    ', false);
-            var expected = fs.readFileSync(path.join(__dirname, 'data', 'params_txt'), readOptions);
+            var expected = fs.readFileSync(path.join(__dirname, 'data', 'params_txt'), readOptions)
+                .replace(/\r/gm, '');
 
             expect(result).toEqual(expected);
         });
         it('supports oneline option', function () {
             var result = zipper.generateParamsTxt(pairs, '    ', true);
-            var expected = fs.readFileSync(path.join(__dirname, 'data', 'params_txt_oneline'), readOptions);
+            var expected = fs.readFileSync(path.join(__dirname, 'data', 'params_txt_oneline'), readOptions)
+                .replace(/\r/gm, '');
 
             expect(result).toEqual(expected);
         });
