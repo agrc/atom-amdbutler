@@ -64,6 +64,13 @@ describe('zipper tests', function () {
             expect(pairs[0].path).toEqual('app/config');
             expect(pairs[1].path).toEqual('app/GeoSearch');
         });
+        it('handles matching import and params', function () {
+            var pairs = getPairs('ModuleImportSameAsParam_imports', 'ModuleImportSameAsParam_params');
+
+            expect(pairs.length).toBe(1);
+            expect(pairs[0].path).toEqual('currentSession');
+            expect(pairs[0].name).toEqual('currentSession');
+        });
     });
     describe('generateImportsText', function () {
         it('generates the appropriate imports text', function () {

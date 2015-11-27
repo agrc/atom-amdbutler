@@ -31,6 +31,9 @@ describe('buffer-parser tests', function () {
         it('handles jshint configs at top of file', function () {
             testImport('ModuleJSHint');
         });
+        it('handles imports with the same name as parameter', function () {
+            testImport('ModuleImportSameAsParam');
+        });
     });
     describe('getParamsRange', function () {
         var testParam = function (file) {
@@ -43,6 +46,17 @@ describe('buffer-parser tests', function () {
         });
         it('handles params without newlines', function () {
             testParam('SlourceModule');
+        });
+        it('handles imports with the same name as parameter', function () {
+            testParam('ModuleImportSameAsParam');
+        });
+        it('gets correct range for matching import param names', function () {
+            var txt = fs.readFileSync(path.join(__dirname, 'data', 'ModuleImportSameAsParam.js'), readOptions);
+            var buffer = new TextBuffer(txt);
+            var range = bufferParser.getParamsRange(buffer);
+
+            expect(range.start).toEqual({row: 0, column: 36});
+            expect(range.end).toEqual({row: 0, column: 50});
         });
     });
 });
