@@ -67,25 +67,40 @@ describe('zipper tests', function () {
     });
     describe('generateImportsText', function () {
         it('generates the appropriate imports text', function () {
-            var result = zipper.generateImportsTxt(pairs, '    ');
-            var expected = fs.readFileSync(path.join(__dirname, 'data', 'imports_txt'), readOptions)
-                .replace(/\r/gm, '');
+            var result = zipper.generateImportsTxt(pairs, '    ', true);
+            var expected = fs.readFileSync(path.join(__dirname, 'data', 'imports_txt'), readOptions);
+
+            expect(result).toEqual(expected);
+        });
+        it('generates the appropriate imports text with no package separation', function () {
+            var result = zipper.generateImportsTxt(pairs, '    ', false);
+            var expected = fs.readFileSync(path.join(__dirname, 'data', 'imports_txt_no_separation'), readOptions);
 
             expect(result).toEqual(expected);
         });
     });
     describe('generateParamsTxt', function () {
         it('generates the appropriate params text', function () {
-            var result = zipper.generateParamsTxt(pairs, '    ', false);
-            var expected = fs.readFileSync(path.join(__dirname, 'data', 'params_txt'), readOptions)
-                .replace(/\r/gm, '');
+            var result = zipper.generateParamsTxt(pairs, '    ', false, true);
+            var expected = fs.readFileSync(path.join(__dirname, 'data', 'params_txt'), readOptions);
+
+            expect(result).toEqual(expected);
+        });
+        it('generates the appropriate params text with no package separation', function () {
+            var result = zipper.generateParamsTxt(pairs, '    ', false, false);
+            var expected = fs.readFileSync(path.join(__dirname, 'data', 'params_txt_no_separation'), readOptions);
 
             expect(result).toEqual(expected);
         });
         it('supports oneline option', function () {
-            var result = zipper.generateParamsTxt(pairs, '    ', true);
-            var expected = fs.readFileSync(path.join(__dirname, 'data', 'params_txt_oneline'), readOptions)
-                .replace(/\r/gm, '');
+            var result = zipper.generateParamsTxt(pairs, '    ', true, true);
+            var expected = fs.readFileSync(path.join(__dirname, 'data', 'params_txt_oneline'), readOptions);
+
+            expect(result).toEqual(expected);
+        });
+        it('supports oneline option, ignores no separation option', function () {
+            var result = zipper.generateParamsTxt(pairs, '    ', true, false);
+            var expected = fs.readFileSync(path.join(__dirname, 'data', 'params_txt_oneline'), readOptions);
 
             expect(result).toEqual(expected);
         });

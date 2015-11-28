@@ -1,0 +1,16 @@
+
+    'dijit/_TemplatedMixin',
+    'dijit/_WidgetBase',
+    'dijit/_WidgetsInTemplateMixin',
+    'dojo/_base/array',
+    'dojo/_base/Color',
+    'dojo/_base/declare',
+    'dojo/_base/lang',
+    'dojo/dom-class',
+    'dojo/dom-style',
+    'dojo/has',
+    'dojo/keys',
+    'dojo/on',
+    'dojo/text!app/templates/GeoSearch.html',
+    'dijit/form/ValidationTextBox',
+    'dojo/domReady!'
