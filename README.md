@@ -21,6 +21,8 @@ To prevent duplicate, imports that are already in the current file are excluded 
 
 Argument aliases are usually returned as the file name of the module (e.g. `dojo/_base/array` => `array`). However, if the file name is a [reserved word in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar) the package name is prepended to the beginning of the file name (e.g. `dojo/string` => `dojoString`). [Preferred argument aliases](lib/data/preferred-argument-aliases.js) are also taken into account if they do not follow the standard conventions (PR's for this file are welcome).
 
+If there is a word under the cursor at the time that this command is invoked it is automatically entered into the selector. This also applies for the remove command.
+
 #### `amdbutler:remove` (alt-r)
 Displays a select view of all of your current imports. Selecting an import from the quick list removes it from your file. The imports are also automatically sorted.
 
@@ -29,3 +31,8 @@ Displays a select view of all of your current imports. Selecting an import from 
 
 ## Settings
 Check the settings page for this package from within atom to see available settings.
+
+## Contributors
+[@stdavis](http://github.com/stdavis)  
+[@steveoh](http://github.com/steveoh)  
+[@mokkabonna](http://github.com/mokkabonna)  
