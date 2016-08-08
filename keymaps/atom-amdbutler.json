@@ -1,5 +1,5 @@
 {
-    "atom-workspace .editor": {
+    "atom-text-editor[data-grammar='source js']": {
         "alt-a": "amdbutler:add",
         "alt-s": "amdbutler:sort",
         "alt-r": "amdbutler:remove"
