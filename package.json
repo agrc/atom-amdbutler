@@ -21,11 +21,11 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "atom-space-pen-views": "^2.1.0",
-    "change-case": "^2.3.0",
-    "event-kit": "^1.4.1",
-    "gaze": "^1.0.0",
-    "glob": "^6.0.1",
+    "atom-space-pen-views": "^2.2.0",
+    "change-case": "^3.0.0",
+    "event-kit": "^2.1.0",
+    "gaze": "^1.1.1",
+    "glob": "^7.0.5",
     "put-selector": "^0.3.6"
   }
 }
