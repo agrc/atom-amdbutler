@@ -6,6 +6,12 @@
             "submenu": [{
                 "label": "Add Import",
                 "command": "amdbutler:add"
+            }, {
+                "label": "Remove Import",
+                "command": "amdbutler:remove"
+            }, {
+                "label": "Sort Imports",
+                "command": "amdbutler:sort"
             }]
         }]
     }]
