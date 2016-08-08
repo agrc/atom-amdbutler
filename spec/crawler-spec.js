@@ -29,7 +29,7 @@ describe('crawler tests', function () {
         it('gets module list', function () {
             crawler.crawl(folder, 'test');
 
-            expect(crawler.modules.length).toBe(7);
+            expect(crawler.modules.length).toBe(8);
         });
         it('gets param name', function () {
             expect(crawler.getParamName('test/dom-style')).toEqual('domStyle');
@@ -63,7 +63,7 @@ describe('crawler tests', function () {
 
             crawler.removeModule('test2/dom-style.js');
 
-            expect(crawler.modules.length).toBe(6);
+            expect(crawler.modules.length).toBe(7);
         });
     });
 });

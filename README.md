@@ -26,6 +26,16 @@ If there is a word under the cursor at the time that this command is invoked it 
 #### `amdbutler:remove` (alt-r)
 Displays a select view of all of your current imports. Selecting an import from the quick list removes it from your file. The imports are also automatically sorted.
 
+## AMD Format
+The minimum amount of code that this tool needs to work on a file is something like this:
+```js
+define([
+
+], function (
+
+) {});
+```
+
 ## Installation
 `apm install amdbutler`
 

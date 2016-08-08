@@ -34,6 +34,16 @@ describe('buffer-parser tests', function () {
         it('handles imports with the same name as parameter', function () {
             testImport('ModuleImportSameAsParam');
         });
+        it('handles files with no imports', function () {
+            testImport('Empty');
+        });
+        it('gets the proper range for empty files', function () {
+            var txt = fs.readFileSync(path.join(__dirname, 'data', 'Empty.js'), readOptions);
+            var range = bufferParser.getImportsRange(new TextBuffer(txt));
+
+            expect(range.start.toString()).toEqual('(0, 8)');
+            expect(range.end.toString()).toEqual('(2, 0)');
+        });
     });
     describe('getParamsRange', function () {
         var testParam = function (file) {
@@ -57,6 +67,9 @@ describe('buffer-parser tests', function () {
 
             expect(range.start).toEqual({row: 0, column: 36});
             expect(range.end).toEqual({row: 0, column: 50});
+        });
+        it('handles files with no params', function () {
+            testParam('Empty');
         });
     });
 });
