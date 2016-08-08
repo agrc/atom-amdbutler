@@ -21,10 +21,8 @@ describe('crawler tests', function () {
 
             expect(crawler.getBaseFolderPath(path, folderNames)).toBe(expected);
         });
-        it('throws error if no match is found', function () {
-            expect(function () {
-                crawler.getBaseFolderPath('/blah/blah', ['hello']);
-            }).toThrow();
+        it('returns undefined if no folder is found', function () {
+            expect(crawler.getBaseFolderPath('/blah/blah', ['hello'])).toBeUndefined();
         });
     });
     describe('crawl', function () {
@@ -53,9 +51,10 @@ describe('crawler tests', function () {
             });
             expect(crawler.getModuleFromPath('/Users/stdavis/Documents/Projects/wri-web/src/app/project/test4.js',
                 '/Users/stdavis/Documents/Projects/wri-web/src')).toEqual({
-                path: 'app/project/test4',
-                name: 'test4'
-            });
+                    path: 'app/project/test4',
+                    name: 'test4'
+                }
+            );
         });
     });
     describe('removeModule', function () {
