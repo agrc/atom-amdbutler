@@ -1,3 +1,12 @@
+## 1.0.0
+* Add missing commands to package menu.
+* Remove npm shrinkwrap.
+* Switch from JSCS/JSHint to ESLint.
+* More graceful handling of error when a base folder is not found in the patch of the current file ([#10](https://github.com/agrc/atom-amdbutler/issues/10))
+* Handle empty files better ([#11](https://github.com/agrc/atom-amdbutler/issues/11))
+* Fix bug causing params with special characters to be removed ([#21](https://github.com/agrc/atom-amdbutler/issues/21)). Thanks to @mokkabonna for reporting this.
+* Bump to a reasonable version number.
+
 ## 0.3.0
 * Automatically selects the word that is under the cursor if any. Another super-useful enhancement from @mokkabonna. Thanks!
 
