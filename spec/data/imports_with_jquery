@@ -1,0 +1,6 @@
+
+    'dojo/_base/declare',
+    'jquery',
+    'dojo/has',
+
+    'dijit/form/ValidationTextBox'

@@ -71,6 +71,13 @@ describe('zipper tests', function () {
             expect(pairs[0].path).toEqual('currentSession');
             expect(pairs[0].name).toEqual('currentSession');
         });
+        it('handles special characters in params such as "$"', function () {
+            var pairs = getPairs('imports_with_jquery', 'params_with_jquery');
+
+            expect(pairs.length).toBe(4);
+            expect(pairs[2].name).toBe('$');
+            expect(pairs[2].path).toBe('jquery');
+        });
     });
     describe('generateImportsText', function () {
         it('generates the appropriate imports text', function () {

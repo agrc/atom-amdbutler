@@ -13,6 +13,7 @@ define([
     'dojo/dom-style',
     'dojo/on',
     'dojo/has',
+    'jquery',
 
     'dijit/form/ValidationTextBox'
 ],
@@ -31,15 +32,15 @@ function (
     array,
     domStyle,
     on,
-    has
+    has,
+    $
     ) {
-    return declare('broadband.GeoSearch',
-        [_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin], {
+    return declare('broadband.GeoSearch', [_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin], {
         // summary:
         // example:
 
         //must be true if you have dijits in your template string
-        widgetsInTemplate: true,
+        widgetsInTemplate: $,
 
         //location of widget template
         templateString: template,
