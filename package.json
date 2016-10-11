@@ -23,9 +23,9 @@
   "dependencies": {
     "atom-space-pen-views": "^2.2.0",
     "change-case": "^3.0.0",
-    "event-kit": "^2.1.0",
-    "gaze": "^1.1.1",
-    "glob": "^7.0.5",
+    "event-kit": "^2.2.0",
+    "gaze": "^1.1.2",
+    "glob": "^7.1.1",
     "put-selector": "^0.3.6"
   }
 }
