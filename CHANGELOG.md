@@ -1,3 +1,6 @@
+## 1.0.2
+* Fix bug causing issues at Atom 1.11.
+
 ## 1.0.0
 * Add missing commands to package menu.
 * Remove npm shrinkwrap.
