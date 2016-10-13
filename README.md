@@ -46,3 +46,7 @@ Check the settings page for this package from within atom to see available setti
 [@stdavis](http://github.com/stdavis)  
 [@steveoh](http://github.com/steveoh)  
 [@mokkabonna](http://github.com/mokkabonna)  
+
+## Publishing a New Version
+1. Update `CHANGELOG.md`
+1. `apm publish [major, minor, patch]`
