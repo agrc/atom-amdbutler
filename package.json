@@ -1,7 +1,7 @@
 {
   "name": "amdbutler",
   "main": "./lib/atom-amdbutler",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Easily manage your AMD dependencies",
   "keywords": [
     "amd",
